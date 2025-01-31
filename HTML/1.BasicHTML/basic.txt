@@ -1,0 +1,8 @@
+html -> structure content
+css -> style
+js -> functionality
+
+
+Instruction <doctype html>
+<doctype html> -- document type this line indicates that u are using HTML5
+

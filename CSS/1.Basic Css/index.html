@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notes</title>
+    <style>
+        /* CSS Styling */
+        h1 {
+            background-color: yellow;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h3 {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        p {
+            font-family: 'Times New Roman', serif;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        select {
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+        /* CSS Selectors Priority */
+        * {
+            color: black;
+        }
+        p {
+            color: blue;
+        }
+        .highlight {
+            color: orange;
+        }
+        #unique {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello from HTML</h1>
+    <h3>Hey</h3>
+    <h3>Hey</h3>
+
+    <!-- CSS Notes -->
+    <h2>CSS Notes</h2>
+    <p>CSS (Cascading Style Sheets) is used to style HTML elements.</p>
+    <h3>Types of CSS</h3>
+    <ul>
+        <li><strong>Inline CSS:</strong> Applied directly to an element using the <code>style</code> attribute.</li>
+        <li><strong>Internal CSS:</strong> Defined within a <code>&lt;style&gt;</code> tag inside the HTML document.</li>
+        <li><strong>External CSS:</strong> Stored in an external file and linked using <code>&lt;link&gt;</code>.</li>
+    </ul>
+    <h3>Basic CSS Selectors</h3>
+    <ul>
+        <li><strong>Universal Selector (*) :</strong> Targets all elements (e.g., <code>* { margin: 0; }</code>).</li>
+        <li><strong>Element Selector:</strong> Targets HTML elements directly (e.g., <code>h1 { color: blue; }</code>).</li>
+        <li><strong>Class Selector:</strong> Targets elements with a specific class (e.g., <code>.className { color: red; }</code>).</li>
+        <li><strong>ID Selector:</strong> Targets a specific element with an ID (e.g., <code>#idName { color: green; }</code>).</li>
+    </ul>
+    <h3>Text Properties</h3>
+    <ul>
+        <li><strong>Text Alignment:</strong> Controls the horizontal alignment of text (e.g., <code>text-align: center;</code>).</li>
+        <li><strong>Text Transformation:</strong> Changes text case (e.g., <code>text-transform: uppercase;</code>).</li>
+        <li><strong>Text Decoration:</strong> Adds decoration like underline, overline (e.g., <code>text-decoration: underline;</code>).</li>
+        <li><strong>Line Height:</strong> Defines space between lines (e.g., <code>line-height: 1.5;</code>).</li>
+    </ul>
+    <h3>Font Properties</h3>
+    <ul>
+        <li><strong>Font Family:</strong> Defines the font type (e.g., <code>font-family: Arial, sans-serif;</code>).</li>
+        <li><strong>Font Size:</strong> Defines text size (e.g., <code>font-size: 16px;</code>).</li>
+        <li><strong>Font Weight:</strong> Sets text thickness (e.g., <code>font-weight: bold;</code>).</li>
+        <li><strong>Font Style:</strong> Defines if text is italic, normal, etc. (e.g., <code>font-style: italic;</code>).</li>
+    </ul>
+    <h3>Select Input</h3>
+    <label for="options">Choose an option:</label>
+    <select id="options" name="options">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select>
+    <h3>CSS Selector Priority</h3>
+    <p id="unique" class="highlight">This paragraph demonstrates selector priority.</p>
+</body>
+</html>

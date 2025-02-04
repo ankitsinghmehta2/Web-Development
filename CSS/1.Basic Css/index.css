@@ -1,0 +1,38 @@
+
+h1 {
+    background-color: yellow;
+    color: red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3 {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+select {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+}
+/* CSS Selectors Priority */
+* {
+    color: black;
+}
+p {
+    color: blue;
+}
+.highlight {
+    color: orange;
+}
+#unique {
+    color: purple;
+}

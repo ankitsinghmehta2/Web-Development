@@ -1,1 +1,54 @@
-CSS-
+CSS Notes
+
+1. **CSS (Cascading Style Sheets)** is used to style HTML elements and enhance web page design.
+
+2. **Types of CSS:**
+   - *Inline CSS:* Applied directly within an element using the `style` attribute.
+   - *Internal CSS:* Defined within a `<style>` tag inside the HTML document.
+   - *External CSS:* Stored in a separate file and linked using `<link>`.
+
+3. **Basic CSS Selectors:**
+   - *Universal Selector (*):* Applies to all elements (e.g., `* { margin: 0; }`).
+   - *Element Selector:* Targets specific HTML elements (e.g., `h1 { color: blue; }`).
+   - *Class Selector:* Targets elements with a specific class (e.g., `.className { color: red; }`).
+   - *ID Selector:* Targets a unique element by its ID (e.g., `#idName { color: green; }`).
+
+4. **Text Properties:**
+   - `text-align`: Aligns text (e.g., `text-align: center;`).
+   - `text-transform`: Changes case (e.g., `text-transform: uppercase;`).
+   - `text-decoration`: Adds styles like underline or overline.
+   - `line-height`: Defines space between lines.
+
+5. **Font Properties:**
+   - `font-family`: Defines the font type (e.g., `font-family: Arial, sans-serif;`).
+   - `font-size`: Adjusts text size.
+   - `font-weight`: Sets text thickness.
+   - `font-style`: Defines if text is italic, normal, etc.
+
+6. **CSS Selector Priority (Specificity Order):**
+   - `!important` (Highest Priority)
+   - Inline styles (`style="color: red;"`)
+   - ID selectors (`#id`)
+   - Class, attribute, and pseudo-class selectors (`.class`, `[type="text"]`, `:hover`)
+   - Element selectors (`p`, `h1`, `div`)
+   - Universal selector (`*`)
+
+7. **Example of CSS Priority:**
+   ```css
+   * { color: black; } /* Least priority */
+   p { color: blue; }
+   .highlight { color: orange; }
+   #unique { color: purple; } /* Highest priority (except inline) */
+   ```
+
+8. **Select Input Example:**
+   ```html
+   <label for="options">Choose an option:</label>
+   <select id="options" name="options">
+       <option value="option1">Option 1</option>
+       <option value="option2">Option 2</option>
+       <option value="option3">Option 3</option>
+   </select>
+   ```
+
+This document serves as a quick CSS reference guide.

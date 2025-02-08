@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .name h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .name p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .main-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            width: 300px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card h1 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .card h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-card {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="name">
+            <h1>Product Showcase</h1>
+            <p>Explore our amazing products!</p>
+        </div>
+        <div class="main-card">
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Awesome</h1>
+                <p>High-quality product with great features.</p>
+                <h4>$100</h4>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Awesome</h1>
+                <p>High-quality product with great features.</p>
+                <h4>$100</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Awesome</h1>
+                <p>High-quality product with great features.</p>
+                <h4>$100</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Awesome</h1>
+                <p>High-quality product with great features.</p>
+                <h4>$100</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1682125779534-76c5debea767?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Awesome</h1>
+                <p>High-quality product with great features.</p>
+                <h4>$100</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

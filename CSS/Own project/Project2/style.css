@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(227, 227, 227, 0.648);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main {
+  padding: 4rem;
+}
+.main .view-1 {
+  width: auto;
+  height: 99vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view-1 img {
+  width: 100%;
+  height: 98%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view-1 p {
+  letter-spacing: 0.2rem;
+  position: absolute;
+  bottom: 42%;
+  right: 7%;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  line-height: 2;
+  margin: 0;
+}
+.main .view-1 h1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 19rem;
+  font-weight: 200;
+  color: white;
+  line-height: 1;
+  margin: 0;
+}
+.main .view-2 {
+  padding: 6rem 3rem;
+}
+.main .view-2 h1 {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  line-height: 5.5rem;
+  font-size: 5.5rem;
+  font-weight: 300;
+  width: 100%;
+  letter-spacing: -0.4rem;
+}
+.main .view-2 .span-1 {
+  margin-left: 14%;
+}
+.main .view-2 .span-2 {
+  margin-left: 30%;
+}
+.main .view-2 .span-3 {
+  margin-left: 44%;
+}
+.main .view-2 div {
+  margin-left: 44%;
+  width: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.main .view-2 div button {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+.main .view-2 div button span {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: rgb(176, 176, 176);
+}
+.main .view-3 {
+  background-color: red;
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main .view-3 video {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view-4 {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .view-4 h1 {
+  line-height: 3.5rem;
+  padding: 3rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  width: 70%;
+  letter-spacing: -0.1rem;
+}
+.main .view-4 h1 span {
+  font-weight: 400;
+  font-style: italic;
+}
+.main .view-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.main .view-5 div {
+  margin-top: -30rem;
+  position: sticky;
+  top: 15%;
+}
+.main .view-5 div h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  font-style: italic;
+}
+.main .view-5 div h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.main .view-5 div button {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+.main .view-5 div button span {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: rgb(176, 176, 176);
+}
+.main .view-5 img {
+  width: 60%;
+  height: auto;
+}
+.main .view-6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .view-6 div {
+  margin-top: -30rem;
+  position: sticky;
+  top: 15%;
+}
+.main .view-6 div h1 {
+  font-weight: 500;
+  font-size: 4rem;
+  font-style: italic;
+}
+.main .view-6 div h5 {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.main .view-6 div button {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+.main .view-6 div button span {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: rgb(176, 176, 176);
+}
+.main .view-6 img {
+  width: 133rem;
+  height: auto;
+}
+.main .view-7 {
+  margin-top: 5rem;
+  position: relative;
+}
+.main .view-7 img {
+  width: 100%;
+}
+.main .view-7 div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.311);
+  position: absolute;
+  z-index: 1;
+}
+.main .view-7 p {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  font-weight: 400;
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+.main .view-8 {
+  margin-top: 5rem;
+}
+.main .view-8 h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.main .view-8 div {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+.main .view-8 p {
+  width: 20%;
+}
+.main .view-8 p button {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+}
+.main .view-8 p button span {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: rgb(176, 176, 176);
+}
+.main .view-8 img {
+  width: 23%;
+  height: 60%;
+}
+.main .footer {
+  margin-top: 5rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  border-top: 5px solid rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  .main .view-1 img {
+    width: 100%;
+  }
+  .main .view-1 p {
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main .view-1 h1 {
+    display: none;
+  }
+  .main .view-2 h1 {
+    padding: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
+    background-color: red;
+    width: 100%;
+    letter-spacing: 0.4rem;
+  }
+  .main .view-2 h1 .span-1 {
+    margin-left: 4%;
+  }
+  .main .view-2 h1 .span-2 {
+    margin-left: 30%;
+  }
+  .main .view-2 h1 .span-3 {
+    margin-left: 44%;
+  }
+}/*# sourceMappingURL=style.css.map */

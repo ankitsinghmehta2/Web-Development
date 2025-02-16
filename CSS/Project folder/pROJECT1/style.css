@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+main {
+  width: 100%;
+}
+
+.view1 {
+  padding: 1.5rem 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view1 .gif {
+  display: none;
+}
+.view1 .gif2 {
+  width: 10rem;
+  animation: gif 2s linear infinite alternate;
+}
+.view1 img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.view1 em {
+  font-size: 4rem;
+}
+.view1 h1 {
+  color: rgb(171, 171, 171);
+  text-align: center;
+  font-weight: 100;
+  font-size: 4rem;
+}
+.view1 .p {
+  color: rgb(129, 129, 129);
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  margin: 0.9rem;
+}
+.view1 br {
+  display: none;
+}
+
+.view2 {
+  width: 100%;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+.view2 .markq {
+  display: flex;
+  overflow: hidden;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.view2 .markq::after {
+  content: "";
+  height: 100%;
+  width: 30%;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.view2 .markq::before {
+  content: "";
+  height: 100%;
+  z-index: 1;
+  width: 30%;
+  background-image: linear-gradient(to right, transparent, rgb(0, 0, 0));
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.view2 .markq .text {
+  display: flex;
+  padding: 0 1.5rem;
+  gap: 3rem;
+  animation: slide 10s infinite linear;
+}
+.view2 .markq .text p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+
+.view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.view3 .box-1 {
+  border: 1px solid rgb(70, 70, 70);
+  color: rgb(158, 158, 158);
+  border-radius: 4px;
+  width: 90%;
+  background-color: #0c0c0c;
+  padding: 2rem 3rem;
+}
+.view3 .box-1 p {
+  margin: 0.6rem 0;
+}
+.view3 .box-1 h1 {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+.view3 .box-1 r {
+  background-color: rgb(24, 24, 24);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(84, 84, 84);
+  margin: 0 1rem 0 0;
+}
+.view3 .box-1 .h4 {
+  display: flex;
+  align-items: center;
+  margin: 1.9rem 0 1.5rem 0;
+}
+
+.view4 {
+  width: 100%;
+  padding: 3rem;
+}
+.view4 .top-work {
+  color: rgb(171, 171, 171);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.view4 .top-work h1 {
+  color: rgb(171, 171, 171);
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.view4 .top-work h3 {
+  color: #bababa;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.view4 .imgdiv {
+  padding: 1rem;
+  height: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "a" "b" "c" "d";
+}
+.view4 .imgdiv img {
+  width: 100%;
+}
+
+.view5 h1 {
+  font-weight: 300;
+  color: rgb(171, 171, 171);
+  text-align: center;
+  line-height: 4.5rem;
+  font-size: 4rem;
+}
+.view5 em {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+.view5 p {
+  color: rgb(174, 174, 174);
+  text-align: center;
+  font-size: 1rem;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 1020px) {
+  html {
+    font-size: clamp(16px, 1vw, 20px);
+  }
+  .view1 img {
+    width: 28%;
+  }
+  .view1 h1 {
+    font-size: 7rem;
+    margin-top: -60px;
+  }
+  .view1 .gif {
+    display: block;
+    width: 25%;
+    position: absolute;
+    right: 10px;
+    top: 25rem;
+  }
+  .view1 .gif2 {
+    width: 10%;
+    position: absolute;
+    left: 12rem;
+    top: 20rem;
+    animation: gif 2s linear infinite alternate;
+  }
+  .view1 em {
+    font-size: 6rem;
+  }
+  .view1 br {
+    display: block;
+  }
+  .view1 .p {
+    font-size: 1.5rem;
+  }
+  .view2 .markq {
+    width: 50%;
+  }
+  .view3 {
+    flex-direction: row;
+  }
+  .view4 .imgdiv {
+    grid-template-areas: "a b" "c d";
+  }
+  .view5 h1 {
+    color: rgb(171, 171, 171);
+    text-align: center;
+    font-weight: 100;
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .view5 p {
+    color: rgb(122, 122, 122);
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
+}
+@keyframes gif {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}/*# sourceMappingURL=style.css.map */
